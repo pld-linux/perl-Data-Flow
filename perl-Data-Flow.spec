@@ -1,7 +1,7 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
-#
+%bcond_without	tests	# do not perform "make test"
+
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Data
 %define		pnam	Flow
@@ -23,14 +23,15 @@ Summary(sv):	Data::Flow Perlmodul
 Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Data::Flow
 Summary(zh_CN):	Data::Flow Perl Ä£¿é
 Name:		perl-Data-Flow
-Version:	0.05
-Release:	11
-License:	GPL
+Version:	0.08
+Release:	1
+License:	Unknown
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	aac4ec71bc145ce6bb9663360524b258
+#Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/authors/id/R/RA/RADOS/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	9c6823b51cac7ca583c032574238d128
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 5.8
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -49,12 +50,13 @@ Modu³ perla Data::Flow.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
