@@ -10,7 +10,7 @@ Summary(pl):	Data::Flow - rozszerzenie Perla do prostego budowania danych w opar
 Name:		perl-Data-Flow
 Version:	0.09
 Release:	1
-License:	Unknown
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c889739cb1eb15055b91df08819ff542
