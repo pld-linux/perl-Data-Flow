@@ -14,7 +14,7 @@ Summary(fr):	Module Perl Data::Flow
 Summary(it):	Modulo di Perl Data::Flow
 Summary(ja):	Data::Flow Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Data::Flow ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Data::Flow
+Summary(nb):	Perlmodul Data::Flow
 Summary(pl):	Modu³ Perla Data::Flow
 Summary(pt):	Módulo de Perl Data::Flow
 Summary(pt_BR):	Módulo Perl Data::Flow
