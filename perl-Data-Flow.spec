@@ -1,11 +1,12 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Data
 %define		pnam	Flow
 Summary:	Data::Flow - Perl extension for simple-minded recipe-controlled build of data
+Summary(pl):	Data::Flow - rozszerzenie Perla do prostego budowania danych w oparciu o regu³y
 Name:		perl-Data-Flow
 Version:	0.09
 Release:	1
@@ -24,7 +25,8 @@ Data::Flow - Perl extension for simple-minded recipe-controlled build
 of data.
 
 %description -l pl
-Modu³ perla Data::Flow.
+Data::Flow - rozszerzenie Perla s³u¿±ce do prosteo budowania danych
+w oparciu o regu³y.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
