@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Data
 %define	pnam	Flow
-%include	/usr/lib/rpm/macros.perl
 Summary:	Data-Flow perl module
 Summary(pl):	Modu³ perla Data-Flow
 Name:		perl-Data-Flow
 Version:	0.05
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ of data.
 Modu³ perla Data-Flow.
 
 %prep
-%setup -q -n Data-Flow-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
