@@ -14,7 +14,7 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c889739cb1eb15055b91df08819ff542
-#Source0:	http://www.cpan.org/authors/id/R/RA/RADOS/%{pdir}-%{pnam}-%{version}.tar.gz
+#Source0:	http://www.cpan.org/modules/by-authors/id/R/RA/RADOS/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildArch:	noarch
