@@ -25,7 +25,7 @@ Data::Flow - Perl extension for simple-minded recipe-controlled build
 of data.
 
 %description -l pl
-Data::Flow - rozszerzenie Perla s³u¿±ce do prosteo budowania danych
+Data::Flow - rozszerzenie Perla s³u¿±ce do prostego budowania danych
 w oparciu o regu³y.
 
 %prep
