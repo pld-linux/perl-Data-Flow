@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Data
 %define	pnam	Flow
-Summary:	Data-Flow perl module
-Summary(pl):	Modu³ perla Data-Flow
+Summary:	Data::Flow perl module
+Summary(pl):	Modu³ perla Data::Flow
 Name:		perl-Data-Flow
 Version:	0.05
 Release:	8
@@ -15,11 +15,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Data-Flow - Perl extension for simple-minded recipe-controlled build
+Data::Flow - Perl extension for simple-minded recipe-controlled build
 of data.
 
 %description -l pl
-Modu³ perla Data-Flow.
+Modu³ perla Data::Flow.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
