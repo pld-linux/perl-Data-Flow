@@ -24,7 +24,7 @@ Summary(uk):	Модуль для Perl Data::Flow
 Summary(zh_CN):	Data::Flow Perl дё©И
 Name:		perl-Data-Flow
 Version:	0.05
-Release:	10
+Release:	11
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
