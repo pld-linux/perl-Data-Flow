@@ -1,3 +1,7 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Data
 %define		pnam	Flow
@@ -20,7 +24,7 @@ Summary(uk):	Модуль для Perl Data::Flow
 Summary(zh_CN):	Data::Flow Perl дё©И
 Name:		perl-Data-Flow
 Version:	0.05
-Release:	9
+Release:	10
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -43,6 +47,8 @@ ModuЁ perla Data::Flow.
 perl Makefile.PL
 %{__make}
 
+%{!?_without_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
@@ -55,7 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes
 %{perl_sitelib}/Data/Flow.pm
-%dir %{perl_sitelib}/auto/Data
 %dir %{perl_sitelib}/auto/Data/Flow
 %{perl_sitelib}/auto/Data/Flow/autosplit.ix
 %{_mandir}/man3/*
