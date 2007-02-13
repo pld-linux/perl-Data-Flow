@@ -6,7 +6,7 @@
 %define		pdir	Data
 %define		pnam	Flow
 Summary:	Data::Flow - Perl extension for simple-minded recipe-controlled build of data
-Summary(pl.UTF-8):   Data::Flow - rozszerzenie Perla do prostego budowania danych w oparciu o reguły
+Summary(pl.UTF-8):	Data::Flow - rozszerzenie Perla do prostego budowania danych w oparciu o reguły
 Name:		perl-Data-Flow
 Version:	0.09
 Release:	2
