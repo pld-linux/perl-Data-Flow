@@ -8,12 +8,12 @@
 Summary:	Data::Flow - Perl extension for simple-minded recipe-controlled build of data
 Summary(pl.UTF-8):	Data::Flow - rozszerzenie Perla do prostego budowania danych w oparciu o reguły
 Name:		perl-Data-Flow
-Version:	0.09
-Release:	3
+Version:	1.02
+Release:	1
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	c889739cb1eb15055b91df08819ff542
+# Source0-md5:	aa453ab013681206bccf43e8e267d63b
 #Source0:	http://www.cpan.org/modules/by-authors/id/R/RA/RADOS/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
