@@ -12,9 +12,9 @@ Version:	1.02
 Release:	1
 License:	unknown
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Data/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	aa453ab013681206bccf43e8e267d63b
-#Source0:	http://www.cpan.org/modules/by-authors/id/R/RA/RADOS/%{pdir}-%{pnam}-%{version}.tar.gz
+URL:		http://search.cpan.org/dist/Data-Flow/
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildArch:	noarch
@@ -53,4 +53,4 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/Data/Flow.pm
 %dir %{perl_vendorlib}/auto/Data/Flow
 %{perl_vendorlib}/auto/Data/Flow/autosplit.ix
-%{_mandir}/man3/*
+%{_mandir}/man3/Data::Flow.3pm*
