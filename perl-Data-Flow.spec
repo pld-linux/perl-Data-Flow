@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Data
 %define		pnam	Flow
 Summary:	Data::Flow - Perl extension for simple-minded recipe-controlled build of data
