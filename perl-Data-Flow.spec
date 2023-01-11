@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	Data
 %define		pnam	Flow
@@ -13,9 +13,10 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Data/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	aa453ab013681206bccf43e8e267d63b
-URL:		http://search.cpan.org/dist/Data-Flow/
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		https://metacpan.org/dist/Data-Flow
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
